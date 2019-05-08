@@ -12,7 +12,7 @@ class Ranges {
 
     @Test
     fun rangeStep() {
-        for (i in 4..8 step 2) {
+        for (i in 4..9 step 2) {
             println(i)
             assert(i in 4..8)
             assert(i % 2 == 0)
@@ -22,12 +22,12 @@ class Ranges {
     @Test
     fun rangeVar() {
         val range = 1..4
-        range.map { it + 20 }
+        range.map {it + 20 }
             .forEach { assert(it in 21..24) }
     }
 
     @Test
     fun dates() {
-        assert(Date(1000) in Date(0)..Date(10000))
+        assert(Date(1_000) in Date(0)..Date(10_000))
     }
 }

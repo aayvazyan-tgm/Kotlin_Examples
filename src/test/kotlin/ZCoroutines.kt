@@ -7,11 +7,12 @@ class ZCoroutines {
     @Test
     fun coroutine() {
         GlobalScope.launch {
-            delay(1000)
-            println("Hello")
+            delay(2000)
+            println("World!")
         }
-        Thread.sleep(2000)
-        println("World!")
+        Thread.sleep(1000)
+        println("Hello")
+        Thread.sleep(3000)
     }
 
     @Test

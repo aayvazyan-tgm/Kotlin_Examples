@@ -1,11 +1,11 @@
 import org.junit.Test
-import kotlin.test.assertEquals
+import kotlin.test.assertEquals as assert
 
 class AUnitTestExample {
 
     @Test
     fun successTest() {
-        assertEquals(true, true)
+        assert(true, true)
     }
 
     @Test
